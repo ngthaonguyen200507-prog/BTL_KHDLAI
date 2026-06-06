@@ -1,1 +1,19 @@
+# 1. Loại bỏ các file chứa mã khóa, token bảo mật nhạy cảm
 .env
+.env.local
+
+# 2. Loại bỏ thư mục rác sinh ra tự động trong quá trình chạy Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+
+# 3. Loại bỏ các file dữ liệu nặng để tránh quá tải bộ nhớ Git công cộng
+*.csv
+*.xlsx
+*.sqlite
+
+# 4. Loại bỏ cấu hình riêng của IDE làm việc cá nhân
+.vscode/
+.idea/
